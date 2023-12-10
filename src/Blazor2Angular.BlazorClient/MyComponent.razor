@@ -1,0 +1,16 @@
+﻿<h3>Blazor-Component: Random Number</h3>
+
+<p role="status">Our random number: @randomNumber</p>
+
+<button class="btn btn-primary" @onclick="GenerateNumber">Click me</button>
+
+
+@code {
+    public int randomNumber { get; set; }
+
+    public void GenerateNumber()
+    {
+      Random rd = new();
+      randomNumber = rd.Next(0, 100);
+    }
+}

@@ -1,0 +1,6 @@
+@Blazor2Angular.AngularApp.Server_HostAddress = http://localhost:5015
+
+GET {{Blazor2Angular.AngularApp.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
